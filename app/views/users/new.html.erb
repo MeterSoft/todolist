@@ -1,9 +1,1 @@
-<%= form_for @user do |f| %>
-  <%= f.error_messages %>
-  First name: <%= f.text_field :first_name %> </br>
-  Last name: <%= f.text_field :last_name %></br>
-  Title: <%= f.text_field :title %> </br>
-  Description: <%= f.text_field :description %> </br>
-  Age: <%= f.text_field :age %></br>
-  <%= f.submit 'Save' %>
-<% end %>
+<%= render :partial => 'form.html' %>
