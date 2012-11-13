@@ -1,11 +1,11 @@
-<% for user in @users %>
-  <a href="/users/<%=user.id %>" > 
+<% @users.each_with_index do |user, i| %>
+    <%= i+1 %>
+    <a href="/users/<%=user.id %>" > 
     <%= user.first_name %> 
     <%= user.last_name %> 
-  </a>
-
   </br>
-
 <% end %>
+    <a href="/users/new">Add new user</a>
+
 
 
