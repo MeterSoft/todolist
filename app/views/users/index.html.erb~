@@ -1,0 +1,11 @@
+<% for user in @users %>
+  <a href="/users/<%=user.id %>" > 
+    <%= user.first_name %> 
+    <%= user.last_name %> 
+  </a>
+
+  </br>
+
+<% end %>
+
+
